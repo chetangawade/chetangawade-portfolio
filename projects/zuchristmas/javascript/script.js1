@@ -1,0 +1,6 @@
+function handleOnScroll() {
+  const header = document.getElementById('header');
+  header.classList.toggle('sticky', scrollY > 150);
+  header.color('black')
+}
+

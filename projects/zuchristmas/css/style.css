@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
+
+
+* {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+#header a{
+  font-size: 20px;
+ }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+
+header .logo {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+header img {
+  width: 50px;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation li {
+  list-style: none;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.navigation li a:hover {
+  color: #ff0157;
+}
+
+header.sticky {
+  background-color: #ffffff;
+  box-shadow: 0 5px 20px #00000050;
+}
+
+header.sticky .logo,
+header.sticky .navigation li a {
+  color: #000000;
+}
+
+header span {
+  color: red;
+  font-family: Marmelad;
+  font-weight: 200;
+}
+
+header .load {
+  background-color: #000;
+}
+
+.song {
+  position: fixed;
+  bottom: -6px;
+  right: 0;
+  z-index: 9;  
+}
+
+.sec-1 {
+  background-image: linear-gradient(to bottom,  rgba(0, 0, 0, 0) 0, #000 100%) ,url(../images/pic1.jpg);
+  background-size: cover;
+}
+
+.sec-1 .appImg {
+  width: 150px;
+}
+
+.sec-1 .bi {
+  background-color: transparent;
+}
+
+.sec-1 h1 {
+  font-family: 'Great Vibes', cursive; 
+  font-size: 50px;
+}
+
+.sec-1 h4{
+  font-family: 'Varela', sans-serif;
+}
+
+.sec-2 {
+  background-color: #37488A;
+}
+
+.sec-2 h2 {
+  font-family: 'Marmelad', sans-serif;
+  font-size: 30px;
+}
+
+.sec-2 .gift {
+  background-color: #53629A;
+  border: 7px dashed #ffffff50;
+}
+
+.sec-2 a {
+  background-color: rgb(184, 2, 2);
+}
+
+.sec-3 {
+  background-color: #EDEEF3;
+}
+
+.sec-3 p {
+  font-family: Arial,sans-serif;
+  color: #999;
+}
+
+.sec-3 h3 {
+  font-family: Varela,Helvetica,Arial,sans-serif;
+  font-size: 24px;
+}
+
+.sec-4 {
+  background-image: linear-gradient(to bottom,  rgba(0, 0, 0, 0) 0, #000 100%) , url(../images/pic2.jpg);
+  background-size: cover;
+}
+
+.sec-4 h2 {
+  font-family: Marmelad;
+  font-size: 30px;
+}
+
+.sec-4 input, textarea, button{
+  background-color: transparent;
+}
+
+footer {
+  color: #999;
+  background-color: #111111;
+}
+
+footer li {
+  display: inline-block;
+}
+
+@media (min-width: 320px) {
+
+  .sec-1 {
+    text-align: center;
+  }
+}
+
+@media (min-width : 768px) {
+  
+  .sec-2 .gift {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+}
+
+@media (min-width : 992px) {
+
+  .sec-1 {
+    text-align: left;
+  }
+
+
+  .sec-1 h1  {
+    font-size: 80px;
+  }
+
+  .sec-2 h2 {
+    font-size: 70px;
+  }
+
+  .sec-2 .gift {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .sec-3 .row {
+    padding-right: 200px;
+    padding-left: 200px;
+  }
+
+ .sec-4 form {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
