@@ -1,0 +1,303 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+.sec-1 .d-flex {
+  background-color: #33211D;
+}
+
+.sec-1 button {
+  background-color: transparent;
+}
+
+.d-flex h1 {
+  color: #ffffff;
+}
+
+.carousel-caption {
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  background-color: #28191590;
+}
+
+.carousel-indicators {
+  bottom: 10%;
+  /* right: 80%; */
+  left: 5%;  
+  margin: 0;
+  transition : all 1s linear;
+}
+
+.carousel-indicators [data-bs-target] {
+  height: 20px;
+  width: 20px; 
+  border-radius: 50%;
+  background-color: #DA9F5B;
+}
+
+.bi-arrow-left-square-fill,
+.bi-arrow-right-square-fill {
+  font-size: 2.5rem;
+  color: red;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  opacity: 1;
+  position: static;
+  width: auto;
+} 
+
+.carousel-control-prev {
+  margin-right: 20px;
+}
+
+.myControl {
+  display: flex;
+  /* justify-content: space-between; */
+  position: absolute;
+}
+
+.myControl button {
+  position: relative;
+  top: 50%;
+  height: 20px;
+  width: 50px;
+}
+
+.carousel-item h1 {
+  font-size: 50px;
+}
+
+.carousel-item h2 {
+  color: #DA9F5B;
+}
+
+.second-container {
+  box-sizing: border-box;
+}
+
+.border-end {
+  border-color: #DA9F5B;
+  border-width: 50px;
+}
+.border-start {
+  border-color: #DA9F5B;
+  border-width: 50px;
+}
+
+.story-container button {
+  border-radius: 0;
+  background-color: #33211D;
+}
+
+.story-container button:hover {
+  background-color: #000000;
+}
+
+.vision-container button {
+  border-radius: 0;
+  background-color: #d5954b;
+}
+
+.vision-container button:hover {
+  background-color: #be7c32;
+}
+
+.section-title p {
+  font-size: 20px;
+  color: #DA9F5B;  
+}
+
+.section-title h1 {
+  color: #33211D;
+}
+
+.text-uppercase {
+  color: #DA9F5B;
+  font-size: 25px;
+  letter-spacing: 4px;
+}
+
+.second-container h2 {
+  font-size: 27px;
+}
+
+.second-container h5 {
+  color: #211815;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+.second-container p {
+  font-size: 18px;
+  color: #555555;
+}
+
+.bi-check-lg {
+  color: #D38A3B;
+}
+
+.sec-3 i {    
+  margin-right: 8px;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 45px;
+  color: #33211D;
+  background: #DA9F5B;
+}
+
+.sec-3 p {
+  font-size: 18px;
+  color: #555555;
+}
+
+.sec-4 {
+  background: linear-gradient(rgba(51,33,29,0.9),rgba(51,33,29,0.9)),url(../images/bg.jpg);
+  background-size: cover;
+}
+
+.sec-4 h1 {
+  font-size: 40px;
+  color: #DA9F5B;
+}
+
+.sec-4 h2 {
+  font-size: 22px;
+}
+
+.sec-4 p {
+  font-size: 20px;
+}
+
+.sec-4 .d-flex {
+  font-size: 18px;
+  height: 50px;
+}
+
+.d-flex button {
+  background-color: #D38A3B;
+}
+
+.sec-5 h2 {
+  color: #33211D;
+  font-size: 30px;
+}
+
+.sec-5 h3 {
+  color: #33211D;
+}
+
+.sec-5 h5 {
+  background-color: #D38A3B;
+}
+
+.sec-5 p {
+  font-size: 18px;
+  color: #555555;
+}
+
+.sec-6 .div-one {
+  background: linear-gradient(rgba(51,33,29,0.9),rgba(51,33,29,0.9)),url(../images/bg.jpg);
+}
+
+.sec-6 h1 {
+  font-size: 40px;
+  color: #DA9F5B;
+}
+
+.sec-6 input{
+  color: grey;
+  background-color: #35221E;
+  border: 1px solid #DA9F5B;
+}
+
+.sec-6 button {
+  color: #35221E;
+  background-color: #DA9F5A;
+}
+
+.sec-6 p{
+  font-size: 18px;
+}
+
+.sec-6 ul {
+  font-size: 18px;
+}
+
+.sec-6 .div-two {
+  background-color: #35221E;
+}
+
+.sec-7 .carousel-indicators {
+  bottom: 0%;
+  left: 5%;
+  top: 90%;
+  margin: 0;
+  /* transition : all 1s linear; */
+}
+
+.sec-8 {
+  background: linear-gradient(rgba(51,33,29,0.9),rgba(51,33,29,0.9)),url(../images/bg.jpg);
+}
+
+.sec-8 button {
+  background-color: #D38A3B;
+}
+
+.icon-div button {
+  background-color: #33211D;
+  width: 50px;
+  height: 50px;
+}
+
+.icon-div i:hover {
+  color: #000000;
+}
+
+.icon-div button:hover {
+  background-color: #ffffff;
+}
+
+.sec-8 .d-flex{
+  height: 60px;
+}
+
+.sec-8 span {
+  color: #DA9F5A;
+}
+
+/* ******************************************************************************* */
+/* ******************************************************************************* */
+
+.back-to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 11;
+  animation: action 1s infinite alternate;
+  width: 46px;
+  height: 46px;
+  
+}
+
+.btn {
+  color: #212529;
+  background-color: #DA9F5B;
+  border-color: #DA9F5B;
+  border: 1px solid transparent;
+}

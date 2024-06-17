@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap</title>
+
+  <!-- bootstrap css-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+
+</head>
+
+<body>
+
+  <section class=" sec-1 header lh-base">
+    <div class="gradient"></div>
+    <div class="slider">
+      <div>
+        <div class="navbar navbar-expand-lg text-white">
+          <div class="container-fluid">
+            <a href="" class="navbar-brand text-reset">
+              <img src="./images/logo.png" alt="">
+              <span class="fw-bold">Spering</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myMenu">
+              <span class="navbar-toggler-icon text-white"></span>
+            </button>
+            <div class="navbar-collapse collapse d-lg-flex" id="myMenu">
+              <ul class="navbar-nav ms-auto text-center">
+                <li class="nav-item"><a class="nav-link text-reset" href="">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-reset" href="">About</a></li>
+                <li class="nav-item"><a class="nav-link text-reset" href="">Work</a></li>
+                <li class="nav-item"><a class="nav-link text-reset" href="">Category</a></li>
+              </ul>
+              <div class="user_option d-none d-lg-flex ms-auto text-center">
+                <a href="" class="text-reset"><span>Login</span></a>
+                <form method="post" class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                  <button class="btn  my-2 my-sm-0 nav_search-btn text-white" type="submit"><i
+                      class="bi bi-search"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel slide m-md-3 py-5" data-ride="carousel" id="mySlider">
+        <div class="carousel-inner">
+          <div class="carousel-item active ">
+
+            <div class="row container-fluid d-md-flex flex-wrap">
+              <div class="content-container col-md-8">
+                <div class=" text-white text-center text-md-start col-md-7 offset-md-1">
+                  <div>
+                    <h1 class="fw-bold display-4 text-uppercase">You Can <br> Hire <br> Freelancer Here</h1>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    </p>
+                    <div class="align-content-center py-5">
+                      <button class="first-btn d-inline-block py-2 text-white border border-danger">About Us</button>
+                      <button class="second-btn d-inline-block py-2 mt-2 border border-transparent">Get A Quote</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="img-container col-md-4 align-content-center my-auto">
+                <div class="w-100">
+                  <div class="w-100 mx-auto">
+                    <img src="./images/slider-img.png" alt="" class="w-100">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+
+            <div class="row container-fluid d-md-flex flex-wrap">
+              <div class="content-container col-md-8">
+                <div class=" text-white text-center text-md-start col-md-7 offset-md-1">
+                  <div>
+                    <h1 class="fw-bold display-4 text-uppercase">You Can <br> Hire <br> Freelancer Here</h1>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    </p>
+                    <div class="align-content-center py-5">
+                      <button class="first-btn d-inline-block py-2  border border-danger">About Us</button>
+                      <button class="second-btn d-inline-block py-2 mt-2 border border-transparent">Get A Quote</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="img-container col-md-4 align-content-center my-auto">
+                <div class="w-100">
+                  <div class="w-100 mx-auto">
+                    <img src="./images/slider-img.png" alt="" class="w-100">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="carousel-item">
+
+            <div class="row container-fluid d-md-flex flex-wrap">
+              <div class="content-container col-md-8">
+                <div class=" text-white text-center text-md-start col-md-7 offset-md-1">
+                  <div>
+                    <h1 class="fw-bold display-4 text-uppercase">You Can <br> Hire <br> Freelancer Here</h1>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    </p>
+                    <div class="align-content-center py-5">
+                      <button class="first-btn d-inline-block py-2 text-white border border-danger">About Us</button>
+                      <button class="second-btn d-inline-block py-2 mt-2 border border-transparent">Get A Quote</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="img-container col-md-4 align-content-center my-auto">
+                <div class="w-100">
+                  <div class="w-100 mx-auto">
+                    <img src="./images/slider-img.png" alt="" class="w-100">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="myControl ps-md-5">
+          <button type="button" class="carousel-control-prev text-white align-content-start rounded-circle"
+            data-bs-slide="prev" data-bs-target="#mySlider">
+            <i class="bi bi-arrow-left "></i>
+          </button>
+          <button type="button" class="carousel-control-next text-white  align-content-start rounded-circle"
+            data-bs-slide="next" data-bs-target="#mySlider">
+            <i class="bi bi-arrow-right "></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-2 d-sm-block d-md-flex m-3 ms-md-5 ps-md-5 me-5 m-4 mt-5">
+    <div class="row">
+      <div class="col-md-5 pt-5 my-auto">
+        <img src="./images/experience-img.jpg" alt="" class=" img-fluid">
+      </div>
+      <div class="col-md-6 pt-md-5 ps-0 ms-0 ms-md-5 mt-md-5 ">
+        <h2 class="display-6 pe-3 text-uppercase fw-bolder">Best Experinced Freelancer Here</h2>
+        <p class="py-3">It is a long established fact that a reader will be distracted by the readable content of a page
+          when looking
+          at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+        </p>
+        <a href="" class="first-btn d-inline-block py-2 text-white text-center border border-danger">Read More</a>
+        <a href="" class="second-btn d-inline-block py-2 mt-2 text-center text-white border border-black">Hire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-3 container-fluid pt-4 mb-5">
+    <div class="mt-5">
+      <h2 class="text-white text-center text-uppercase fw-bolder text-decoration-underline">Category</h2>
+    </div>
+    <div class=" text-white align-content-center row">
+      <div class="col-12 col-md-4 text-center p-5">
+        <div class=" text-center">
+          <img src="./images/c1.png" alt="" class="img-fluid">
+        </div>
+        <div>
+          <h5 class="pt-3">Design &amp; Arts</h5>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 text-center p-5">
+        <div class="text-center">
+          <img src="./images/c2.png" alt="" class="img-fluid">
+        </div>
+        <div>
+          <h5 class="pt-3">Web Development</h5>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 text-center p-5">
+        <div>
+          <img src="./images/c3.png" alt="" class="img-fluid">
+        </div>
+        <div>
+          <h5 class="pt-3">SEO Markting</h5>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 text-center p-5">
+        <div>
+          <img src="./images/c4.png" alt="" class="img-fluid">
+        </div>
+        <div>
+          <h5 class="pt-3">Video Edting</h5>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 text-center p-5">
+        <div>
+          <img src="./images/c5.png" alt="" class="img-fluid">
+        </div>
+        <div>
+          <h5 class="pt-3">Logo Design</h5>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 text-center p-5">
+        <div>
+          <img src="./images/c6.png" alt="" class=" img-fluid">
+        </div>
+        <div>
+          <h5 class="pt-3">Game Design</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-4 align-content-center container-fluid text-center mt-5 mb-5">
+    <div>
+      <div>
+        <img src="./images/about-img.jpg" alt="" class="img-fluid">
+      </div>
+    </div>
+    <div class="align-content-center ">
+      <h2 class="text-uppercase fw-bolder display-4">About Spering Company</h2>
+      <p class="mb-5 ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+        alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If
+        youThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+        some form, by injected humour, or randomised words which don't look even slightly believable. If you</p>
+      <button class="first-btn text-white p-2 mt-5  border border-danger ">Read More</button>
+    </div>
+  </section>
+
+  <section class="sec-5 container-fluid">
+    <div>
+      <div class="accordion row m-md-3" id="accordionParent">
+        <div class="col-md-5 offset-md-1">
+          <div>
+            <h2 class="fw-bolder ">Work Freelaner Has Done</h2>
+          </div>
+          <div class="accordion-item border-0">
+            <div class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+              <div class="img-fluid p-3 rounded-circle me-5">
+                <div class="">
+                  <img src="./images/f1.png" alt="">
+                </div>
+              </div>
+              <div>
+                <div>
+                  <h5 class="fw-bold">$250 Million</h5>
+                  <h3 class="fw-bolder text-black">Paid to Freelancers</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <div class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+              <div class="img-fluid p-3 rounded-circle me-5">
+                <div class="">
+                  <img src="./images/f2.png" alt="">
+                </div>
+              </div>
+              <div>
+                <div>
+                  <h5 class="fw-bold">2 Million</h5>
+                  <h3 class="fw-bolder text-black">Paid Invoices</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <div class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+              <div class="img-fluid p-3 rounded-circle me-5">
+                <div class="">
+                  <img src="./images/f3.png" alt="">
+                </div>
+              </div>
+              <div>
+                <div>
+                  <h5 class="fw-bold">700,000</h5>
+                  <h3 class="fw-bolder text-black">Worldwide Freelancer</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <div class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+              <div class="img-fluid p-3 rounded-circle me-5">
+                <div class="">
+                  <img src="./images/f4.png" alt="">
+                </div>
+              </div>
+              <div>
+                <div>
+                  <h5 class="fw-bold">98%</h5>
+                  <h3 class="fw-bolder text-black">Customer Satisfaction Rate</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 my-auto">
+          <div class="collapse accordion-collapse show me-4 my-auto" id="collapseOne" data-bs-parent="#accordionParent">
+            <img src="./images/freelance-img.jpg" alt="" class="img-fluid ">
+          </div>
+          <div class="collapse accordion-collapse " id="collapseTwo" data-bs-parent="#accordionParent">
+            <img src="./images/freelance-img.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="collapse accordion-collapse " id="collapseThree" data-bs-parent="#accordionParent">
+            <img src="./images/freelance-img.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="collapse accordion-collapse " id="collapseFour" data-bs-parent="#accordionParent">
+            <img src="./images/freelance-img.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-6 container py-5 align-content-center">
+    <div class="col-lg-9 col-md-10 mx-auto align-content-center">
+      <div>
+        <h2 class="text-uppercase fw-bold text-center py-5">Testimonial</h2>
+      </div>
+      <div class="carousel slide" data-bs-ride="carousel" id="mySlider">
+        <div class="carousel-inner text-center border border-1 shadow-lg">
+          <div class="carousel-item active">
+            <h4 class="py-4 fw-bold">John Hissona</h4>
+            <p class="px-5">passages of Lorem Ipsum available, but the majority have suffered alteration in some form,
+              by injected humour, or randomised words which don't look even slightly believable. If youThere are many
+              variations of passages of Lorem Ipsum available, but the majority have suffered alteration in s</p>
+            <img src="./images/quote.png" alt="" class="py-4">
+          </div>
+          <div class="carousel-item ">
+            <h4 class="py-4 fw-bold">John Hissona</h4>
+            <p class="px-5">passages of Lorem Ipsum available, but the majority have suffered alteration in some form,
+              by injected humour, or randomised words which don't look even slightly believable. If youThere are many
+              variations of passages of Lorem Ipsum available, but the majority have suffered alteration in s</p>
+            <img src="./images/quote.png" alt="" class="py-4">
+          </div>
+          <div class="carousel-item">
+            <h4 class="py-4 fw-bold">John Hissona</h4>
+            <p class="px-5">passages of Lorem Ipsum available, but the majority have suffered alteration in some form,
+              by injected humour, or randomised words which don't look even slightly believable. If youThere are many
+              variations of passages of Lorem Ipsum available, but the majority have suffered alteration in s</p>
+            <img src="./images/quote.png" alt="" class="py-4">
+          </div>
+        </div>
+        <div class="myControl">
+          <button type="button" class="carousel-control-prev rounded-circle" data-bs-slide="prev"
+            data-bs-target="#mySlider">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button type="button" class="carousel-control-next rounded-circle" data-bs-slide="next"
+            data-bs-target="#mySlider">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-7  text-white my-5 py-5 px-3 container-fluid px-md-5">
+    <div class="container">
+      <div class=" d-md-flex justify-content-between">
+        <div class="py-5 ">
+          <img src="./images/logo.png" alt="">
+          <span class="display-4 fw-bold">Spering</span>
+        </div>
+        <div class="img-div pb-5 p-md-5 ">
+          <a href=""><img src="./images/fb.png" alt="" class="p-2"></a>
+          <a href=""><img src="./images/twitter.png" alt="" class="p-2"></a>
+          <a href=""><img src="./images/linkedin.png" alt="" class="p-2"></a>
+          <a href=""><img src="./images/instagram.png" alt="" class="p-2"></a>
+          <a href=""><img src="./images/youtube.png" alt="" class="p-2"></a>
+        </div>
+      </div>
+      <div class="row align-content-start mb-5">
+        <div class="col-md-3 col-lg-2  ">
+          <h5 class="text-uppercase fw-bold pt-3">Useful Link</h5>
+          <ul class="ps-0">
+            <li>Home</li>
+            <li>About</li>
+            <li>Work</li>
+            <li>Category</li>
+          </ul>
+        </div>
+        <div class="col-md-3 px-2 ">
+          <div>
+            <h5 class="text-uppercase fw-bold pt-3">Offices</h5>
+            <p>Readable content of a page when looking at its layout readable content of a page when looking at its
+              layout
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3 col-lg-2 offset-lg-1 px-2">
+          <div>
+            <h5 class="text-uppercase fw-bold pt-3">Information</h5>
+            <p>Readable content of a page when looking at its layoutreadable content of a page when looking at its
+              layout
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3 offset-lg-1 px-2 ">
+          <div class="align-content-center">
+            <h5 class="text-uppercase fw-bold pt-3">Newsletter</h5>
+            <form action="">
+              <input type="email" placeholder="Email" class="w-100 p-2 mb-3">
+              <button class="px-5 py-2 border-1 mb-5 text-white text-uppercase">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="d-inline-block d-md-flex justify-content-between text-center mt-5 mx-5">
+          <div class="text-center">
+            <a href="" class="d-flex mb-5">
+              <div>
+                <img src="./images/location.png" alt="" class="me-3">
+              </div>
+              <div>
+                <h6 class="text-white me-3">Location</h6>
+              </div>
+            </a>
+          </div>
+          <div class="text-center">
+            <a href="" class="d-flex mb-5">
+              <div>
+                <img src="./images/mail.png" alt="" class="me-3">
+              </div>
+              <div>
+                <h6 class="text-white me-3">mail@domain.com</h6>
+              </div>
+            </a>
+          </div>
+          <div class="text-center">
+            <a href="" class="d-flex mb-5">
+              <div>
+                <img src="./images/call.png" alt="" class="me-3">
+              </div>
+              <div>
+                <h6 class="text-white me-2">Call +01 1234567890</h6>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center mb-5">© 2024 All Rights Reserved. By HTML Design</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- custom script -->
+  <script src="./javascript/script.js"></script>
+
+</body>
+
+</html>

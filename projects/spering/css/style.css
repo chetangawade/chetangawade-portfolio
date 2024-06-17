@@ -1,0 +1,212 @@
+* {
+  font-family: Poppins, sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+
+.navbar img {
+  width: 35px;
+}
+
+.navbar button {
+  border: transparent;
+}
+
+.navbar-brand span {
+  font-size: 24px;
+}
+
+.carousel-inner button {
+  width: 165px;
+  border: 1px solid transparent;
+}
+
+.first-btn { 
+  background-color: #FF4F5A;
+}
+
+.sec-1 .second-btn {
+  background-color: #ffffff;
+}
+
+/* ******************************************** */
+
+.sec-1 .bi-arrow-left,
+.sec-1 .bi-arrow-right {
+  font-size: 2.5rem;
+}
+
+.sec-1 .carousel-control-next,
+.sec-1 .carousel-control-prev {
+  opacity: 1;
+  position: relative;
+  top: 15px;
+  bottom: 0;
+}
+
+.sec-1 .myControl button {
+  background-color: #1CBBB4;
+  width: 50px;
+  height: 50px;
+  /* border-radius: 100px; */
+}
+
+.sec-1 .myControl {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+}
+
+.sec-1 .carousel-indicators {
+  bottom: 10%;
+  right: 80%;
+  left: 90%;
+  margin: 0;
+}
+
+.carousel-item .first-btn:hover {
+  background-color: transparent;
+  color: #000000;
+}
+
+.carousel-item .second-btn:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.sec-2 a {
+  width: 165px;
+  border: 1px solid transparent;
+}
+
+.sec-2 .second-btn {
+  background-color: #1a2e35;
+}
+
+.sec-2 .first-btn:hover {
+  background-color: transparent;
+  color: #FF4F5A;
+}
+
+.sec-2 .second-btn:hover {
+  background-color: transparent;
+  color: #1a2e35;
+}
+
+.sec-3 {
+  background-color: #1CBBB4;
+}
+
+.sec-3 .img-fluid {
+  width: 100px;
+  height: 100px;
+}
+
+.accordion .img-fluid {
+  background-color: #1a2e35;
+}
+
+.accordion .img-fluid:hover {
+  background-color: #1CBBB4;
+}
+
+.accordion h5 {
+  color: #FF4F5A;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  opacity: 0.5;
+  position: static;
+  width: auto;
+  background-color: #1a2e35;
+  transition: opacity 0.15s ease;
+} 
+
+.carousel-control-prev {
+  margin-right: 20px;
+}
+
+.myControl {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+}
+
+.myControl button {
+  position: relative;
+  /* top: 50%; */
+  height: 50px;
+  width: 50px;
+}
+
+.sec-7 {
+  background-color: #1a2e35;
+}
+
+
+.sec-4 .first-btn:hover {
+  background-color: transparent;
+  color: #000000;
+}
+
+.img-div img {
+  width: 45px;
+  height: 45px;
+}
+
+form button {
+  background-color: #FF4F5A;
+}
+
+
+@media (min-width : 320px){
+  .sec-7 {
+    text-align: center;
+  }
+
+  
+.gradient {
+  width: 100%;
+  height: 850px;
+  background: linear-gradient(to bottom, #1a2e35 55%, #1cbbb4 55%);
+  position: absolute;
+  z-index: -1;
+}
+
+.slider {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+}
+
+@media (min-width : 768px){
+  .sec-7 {
+    text-align: left;
+  }
+
+
+  
+.gradient {
+  width: 100%;
+  height: 650px;
+  background: linear-gradient(to right, #1a2e35 55%, #1cbbb4 55%);
+  position: absolute;
+  z-index: -1;
+}
+
+.slider {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+}
