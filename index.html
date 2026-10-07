@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chetan Gawade | DevOps Engineer</title>
+  <meta name="description" content="Chetan Gawade - DevOps Engineer at Kuhoo Finance. AWS, Kubernetes (EKS), Istio, Terraform, CI/CD, observability, disaster recovery and cloud cost optimization.">
+  <meta name="author" content="Chetan Gawade">
+
+  <!-- Social preview -->
+  <meta property="og:title" content="Chetan Gawade | DevOps Engineer">
+  <meta property="og:description" content="DevOps Engineer - AWS, Kubernetes, Istio, Terraform, CI/CD. Saved ₹24 lakhs/year in cloud costs.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chetangawade.github.io/chetangawadeportfolio/">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/devicon@2.16.0/devicon.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Apply saved theme before paint (avoids flash) -->
+  <script>
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+
+<body>
+  <!-- ================= HEADER ================= -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo"><span class="accent">~/</span>chetan</a>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#certifications" class="nav__link">Certifications</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle light / dark theme">
+          <i class='bx bx-sun'></i>
+        </button>
+        <button class="icon-btn nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <i class='bx bx-menu'></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= HOME ================= -->
+    <section class="hero container" id="home">
+      <div class="hero__text">
+        <p class="hero__tag mono"><span class="dot"></span> Open to DevOps / Cloud opportunities</p>
+        <h1 class="hero__title">Hi, I'm <span class="gradient">Chetan Gawade</span></h1>
+        <h2 class="hero__role mono">
+          <span class="accent">$</span> <span id="typed">DevOps Engineer</span><span class="cursor">_</span>
+        </h2>
+        <p class="hero__desc">
+          I build and run <strong>secure, scalable and cost-efficient</strong> cloud platforms on
+          <strong>AWS &amp; Kubernetes</strong>. Currently managing end-to-end DevOps at
+          <strong>Kuhoo Finance</strong>, an RBI-regulated FinTech NBFC.
+        </p>
+
+        <div class="hero__buttons">
+          <a href="assets/resume/Chetan_Gawade_DevOps_Engineer_Resume.pdf" class="btn btn--primary" download>
+            <i class='bx bx-download'></i> Download Resume
+          </a>
+          <a href="#contact" class="btn btn--ghost"><i class='bx bx-envelope'></i> Contact Me</a>
+        </div>
+
+        <div class="hero__social">
+          <a href="https://github.com/chetangawade" target="_blank" rel="noopener" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+          <a href="https://www.linkedin.com/in/chetan-gawade-2379a1246" target="_blank" rel="noopener" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+          <a href="mailto:chetangawde999@gmail.com" aria-label="Email"><i class='bx bx-envelope'></i></a>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="terminal">
+          <div class="terminal__bar"><span></span><span></span><span></span><p class="mono">chetan@kuhoo: ~</p></div>
+          <pre class="terminal__body mono"><span class="accent">$</span> whoami
+chetan · DevOps Engineer @ Kuhoo Finance
+
+<span class="accent">$</span> cat stack.yaml
+<span class="key">cloud:</span>    AWS (EKS, RDS, S3, WAF)
+<span class="key">mesh:</span>     Istio
+<span class="key">iac:</span>      Terraform
+<span class="key">ci_cd:</span>    GitLab · Jenkins · ArgoCD
+<span class="key">observe:</span>  Prometheus · Grafana · ELK · Signoz
+
+<span class="accent">$</span> terraform apply -target=cloud_costs
+<span class="ok">Apply complete!</span> Savings: ₹24L / year ✔
+<span class="accent">$</span> <span class="cursor">_</span></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STATS ================= -->
+    <section class="stats container" aria-label="Highlights">
+      <div class="stat"><span class="stat__num">₹24L</span><span class="stat__label">annual cloud cost saved</span></div>
+      <div class="stat"><span class="stat__num">40%</span><span class="stat__label">faster deployments</span></div>
+      <div class="stat"><span class="stat__num">5</span><span class="stat__label">certifications incl. AWS SAA &amp; RHCSA</span></div>
+      <div class="stat"><span class="stat__num">RBI</span><span class="stat__label">regulated FinTech infrastructure</span></div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section container" id="about">
+      <h2 class="section__title"><span class="mono accent">01.</span> About Me</h2>
+      <div class="about">
+        <div class="about__text">
+          <p>
+            I'm a <strong>DevOps Engineer</strong> with hands-on experience managing end-to-end cloud and
+            Kubernetes infrastructure on <strong>AWS</strong> in an RBI-regulated NBFC environment.
+          </p>
+          <p>
+            I work across the full DevOps lifecycle: <strong>CI/CD</strong> with GitLab, Jenkins and ArgoCD,
+            <strong>Infrastructure as Code</strong> with Terraform, containers on <strong>Docker, EKS &amp; Istio</strong>,
+            and <strong>observability</strong> with Prometheus, Grafana, ELK and Signoz.
+          </p>
+          <p>
+            I've implemented centralized monitoring, disaster recovery and security controls for high availability
+            and compliance, and achieved significant cloud cost savings through infrastructure optimization.
+          </p>
+        </div>
+        <ul class="about__facts">
+          <li><i class='bx bx-briefcase'></i><div><span>Current role</span>DevOps Engineer, Kuhoo Finance</div></li>
+          <li><i class='bx bx-map'></i><div><span>Location</span>Mumbai, India</div></li>
+          <li><i class='bx bx-cloud'></i><div><span>Focus</span>AWS · Kubernetes · Istio · Terraform</div></li>
+          <li><i class='bx bxs-graduation'></i><div><span>Education</span>B.E. Computer Engineering (2024)</div></li>
+          <li><i class='bx bx-world'></i><div><span>Languages</span>English, Marathi, Hindi</div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="section container" id="experience">
+      <h2 class="section__title"><span class="mono accent">02.</span> Experience</h2>
+
+      <div class="timeline">
+        <article class="job">
+          <div class="job__head">
+            <div>
+              <h3>DevOps Engineer</h3>
+              <p class="job__company">Kuhoo Finance Pvt Ltd <span class="muted">· FinTech, RBI-registered NBFC</span></p>
+            </div>
+            <div class="job__meta mono"><span class="badge badge--live">Feb 2025 - Present</span><span><i class='bx bx-map'></i> Mumbai</span></div>
+          </div>
+          <p>
+            Own the complete DevOps ecosystem for an education-loan NBFC: cloud infrastructure, CI/CD pipelines,
+            security, observability and cost optimization across AWS and Kubernetes.
+          </p>
+          <ul class="job__points">
+            <li><strong>Cloud Cost Optimization:</strong> saved <strong>₹24 lakhs per year</strong> by right-sizing resources and monitoring usage.</li>
+            <li><strong>Istio Policy Enforcement:</strong> access control (AuthN/AuthZ) and rate limiting with Istio.</li>
+            <li><strong>Unified Observability:</strong> centralized logging &amp; monitoring with ELK, Prometheus and Signoz for faster debugging.</li>
+            <li><strong>Secure Environment Architecture:</strong> isolated, access-controlled SIT &amp; UAT environments built for compliance.</li>
+            <li><strong>Disaster Recovery:</strong> data replication, backup automation and failover for business continuity.</li>
+          </ul>
+          <div class="tags">
+            <span>AWS</span><span>EKS</span><span>Istio</span><span>Terraform</span><span>GitLab CI</span><span>ArgoCD</span>
+            <span>ELK</span><span>Prometheus</span><span>Signoz</span><span>WAF</span><span>KMS</span>
+          </div>
+        </article>
+
+        <article class="job">
+          <div class="job__head">
+            <div>
+              <h3>Junior DevOps Engineer</h3>
+              <p class="job__company">The Data Tech Labs</p>
+            </div>
+            <div class="job__meta mono"><span class="badge">Sep 2024 - Jan 2025</span><span><i class='bx bx-map'></i> Pune</span></div>
+          </div>
+          <p>
+            Designed, deployed and maintained scalable cloud infrastructure and automated CI/CD pipelines on AWS and
+            Kubernetes. Worked closely with development and QA teams to streamline deployments and monitoring.
+          </p>
+          <ul class="job__points">
+            <li><strong>Enterprise CI/CD:</strong> automated AWS deployments with Docker &amp; Jenkins, cutting <strong>deployment time by 40%</strong>.</li>
+            <li><strong>End-to-End Pipelines:</strong> complete build, test and deploy workflows with GitLab, Jenkins, ArgoCD and Docker for multiple microservices.</li>
+          </ul>
+          <div class="tags">
+            <span>Jenkins</span><span>ArgoCD</span><span>Docker</span><span>Kubernetes</span><span>EKS</span>
+            <span>Route 53</span><span>Nginx</span><span>Prometheus</span><span>Grafana</span>
+          </div>
+        </article>
+
+        <article class="job">
+          <div class="job__head">
+            <div>
+              <h3>Project Trainee - DevOps <span class="muted">(Internship)</span></h3>
+              <p class="job__company">Assetrak Solutions Pvt Ltd</p>
+            </div>
+            <div class="job__meta mono"><span class="badge">Jul 2024 - Aug 2024</span><span><i class='bx bx-map'></i> Pune</span></div>
+          </div>
+          <ul class="job__points">
+            <li>CI/CD automation with Jenkins, Git and GitHub.</li>
+            <li>Containerization and orchestration with Docker and Kubernetes.</li>
+            <li>Managed AWS infrastructure: EC2, EKS, ALB, RDS, ECR, S3, Auto Scaling.</li>
+            <li>Application deployment and web server management with Apache and Nginx.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section container" id="projects">
+      <h2 class="section__title"><span class="mono accent">03.</span> Key Projects</h2>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card__icon"><i class='bx bx-rupee'></i></div>
+          <h3>Cloud Cost Optimization</h3>
+          <p>Tuned and right-sized AWS resources with continuous usage monitoring, achieving <strong>₹24 lakhs in annual savings</strong>.</p>
+          <div class="tags"><span>AWS</span><span>FinOps</span><span>Monitoring</span></div>
+        </article>
+        <article class="card">
+          <div class="card__icon"><i class='bx bx-shield-quarter'></i></div>
+          <h3>Istio Policy Enforcement</h3>
+          <p>Service-mesh security with Istio AuthN/AuthZ access control and rate limiting to protect microservices.</p>
+          <div class="tags"><span>Istio</span><span>Kubernetes</span><span>Security</span></div>
+        </article>
+        <article class="card">
+          <div class="card__icon"><i class='bx bx-line-chart'></i></div>
+          <h3>Unified Observability</h3>
+          <p>Centralized logging and monitoring stack with ELK, Prometheus and Signoz for faster debugging and alerting.</p>
+          <div class="tags"><span>ELK</span><span>Prometheus</span><span>Signoz</span><span>Grafana</span></div>
+        </article>
+        <article class="card">
+          <div class="card__icon"><i class='bx bx-revision'></i></div>
+          <h3>Disaster Recovery</h3>
+          <p>DR strategy with data replication, automated backups and failover mechanisms for high availability and business continuity.</p>
+          <div class="tags"><span>AWS</span><span>Replication</span><span>Backup</span><span>Failover</span></div>
+        </article>
+        <article class="card">
+          <div class="card__icon"><i class='bx bx-lock-alt'></i></div>
+          <h3>Secure SIT / UAT Architecture</h3>
+          <p>Designed isolated, access-controlled environments for internal applications to meet regulatory compliance.</p>
+          <div class="tags"><span>VPC</span><span>VPN</span><span>IAM</span><span>WAF</span></div>
+        </article>
+        <article class="card">
+          <div class="card__icon"><i class='bx bx-git-branch'></i></div>
+          <h3>End-to-End CI/CD Pipelines</h3>
+          <p>Automated build, test and deploy for multiple microservices with GitLab, Jenkins, ArgoCD and Docker, with <strong>40% faster deployments</strong>.</p>
+          <div class="tags"><span>GitLab CI</span><span>Jenkins</span><span>ArgoCD</span><span>Docker</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section container" id="skills">
+      <h2 class="section__title"><span class="mono accent">04.</span> Skills</h2>
+
+      <div class="skills">
+        <div class="skill-group">
+          <h3><i class='bx bx-cloud'></i> Cloud - AWS</h3>
+          <div class="chips">
+            <span><span class="si" style="--si:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/amazonec2.svg);--c:#FF9900"></span>EC2</span>
+            <span><span class="si" style="--si:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/amazoneks.svg);--c:#FF9900"></span>EKS</span>
+            <span><span class="si" style="--si:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/amazonecs.svg);--c:#FF9900"></span>ECS</span>
+            <span><span class="si" style="--si:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/amazonrds.svg);--c:#FF9900"></span>RDS</span>
+            <span><i class="bx bx-package" style="color:#FF9900"></i>ECR</span>
+            <span><i class="bx bx-network-chart" style="color:#FF9900"></i>VPC</span>
+            <span><span class="si" style="--si:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/awselasticloadbalancing.svg);--c:#FF9900"></span>ALB / NLB</span>
+            <span><i class="bx bx-shield-quarter" style="color:#FF9900"></i>WAF</span>
+            <span><span class="si" style="--si:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/amazoncloudwatch.svg);--c:#FF9900"></span>CloudWatch</span>
+            <span><i class="bx bx-transfer-alt" style="color:#FF9900"></i>DMS</span>
+            <span><span class="si" style="--si:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/amazonelasticache.svg);--c:#FF9900"></span>ElastiCache</span>
+            <span><i class="bx bx-message-square-dots" style="color:#FF9900"></i>MQ</span>
+            <span><i class="bx bx-key" style="color:#FF9900"></i>KMS</span>
+            <span><span class="si" style="--si:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/amazons3.svg);--c:#FF9900"></span>S3</span>
+            <span><span class="si" style="--si:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/amazoniam.svg);--c:#FF9900"></span>IAM</span>
+            <span><i class="bx bx-certification" style="color:#FF9900"></i>ACM</span>
+            <span><span class="si" style="--si:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/awssecretsmanager.svg);--c:#FF9900"></span>Secrets Manager</span>
+            <span><i class="bx bx-history" style="color:#FF9900"></i>CloudTrail</span>
+            <span><span class="si" style="--si:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/amazonroute53.svg);--c:#FF9900"></span>Route 53</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3><i class='bx bx-cube'></i> Containers &amp; Orchestration</h3>
+          <div class="chips">
+            <span><i class="devicon-docker-plain colored"></i>Docker</span>
+            <span><i class="devicon-kubernetes-plain colored"></i>Kubernetes</span>
+            <span><span class="si" style="--si:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/amazoneks.svg);--c:#FF9900"></span>EKS</span>
+            <span><span class="si" style="--si:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/amazonecs.svg);--c:#FF9900"></span>ECS</span>
+            <span><span class="si" style="--si:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/istio.svg);--c:#466BB0"></span>Istio</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3><i class='bx bx-git-merge'></i> CI/CD &amp; SCM</h3>
+          <div class="chips">
+            <span><i class="devicon-gitlab-plain colored"></i>GitLab CI</span>
+            <span><i class="devicon-jenkins-plain colored"></i>Jenkins</span>
+            <span><i class="devicon-argocd-plain colored"></i>ArgoCD</span>
+            <span><i class="devicon-git-plain colored"></i>Git</span>
+            <span><i class="devicon-github-original"></i>GitHub</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3><i class='bx bx-code-block'></i> Infrastructure as Code</h3>
+          <div class="chips">
+            <span><i class="devicon-terraform-plain colored"></i>Terraform</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3><i class='bx bx-pulse'></i> Monitoring &amp; Logging</h3>
+          <div class="chips">
+            <span><i class="devicon-prometheus-original colored"></i>Prometheus</span>
+            <span><i class="devicon-grafana-plain colored"></i>Grafana</span>
+            <span><i class="devicon-elasticsearch-plain colored"></i>Elasticsearch</span>
+            <span><i class="devicon-logstash-plain colored"></i>Logstash</span>
+            <span><i class="devicon-kibana-plain colored"></i>Kibana</span>
+            <span><i class="bx bx-line-chart" style="color:#F25733"></i>Signoz</span>
+            <span><i class="devicon-sentry-plain"></i>Sentry</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3><i class='bx bx-shield'></i> Security &amp; Networking</h3>
+          <div class="chips">
+            <span><span class="si" style="--si:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/istio.svg);--c:#466BB0"></span>Istio AuthN/AuthZ</span>
+            <span><i class="bx bx-tachometer" style="color:#22d3ee"></i>Rate Limiting</span>
+            <span><i class="bx bx-lock-alt" style="color:#4ade80"></i>VPN</span>
+            <span><span class="si" style="--si:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/amazoniam.svg);--c:#FF9900"></span>AWS IAM</span>
+            <span><i class="bx bx-key" style="color:#FF9900"></i>KMS</span>
+            <span><i class="bx bx-shield-quarter" style="color:#FF9900"></i>AWS WAF</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3><i class='bx bx-terminal'></i> OS, Scripting &amp; Web</h3>
+          <div class="chips">
+            <span><i class="devicon-redhat-plain colored"></i>RHEL</span>
+            <span><i class="devicon-linux-plain"></i>Linux</span>
+            <span><i class="devicon-bash-plain"></i>Bash</span>
+            <span><i class="devicon-python-plain colored"></i>Python</span>
+            <span><i class="devicon-django-plain"></i>Django</span>
+            <span><i class="devicon-apache-plain"></i>Apache</span>
+            <span><span class="si" style="--si:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/nginx.svg);--c:#009639"></span>Nginx</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3><i class='bx bx-data'></i> Databases &amp; Tools</h3>
+          <div class="chips">
+            <span><i class="devicon-postgresql-plain colored"></i>PostgreSQL</span>
+            <span><i class="devicon-mysql-plain colored"></i>MySQL</span>
+            <span><i class="devicon-dynamodb-plain colored"></i>DynamoDB</span>
+            <span><i class="devicon-jira-plain colored"></i>JIRA</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CERTIFICATIONS ================= -->
+    <section class="section container" id="certifications">
+      <h2 class="section__title"><span class="mono accent">05.</span> Certifications</h2>
+
+      <div class="certs">
+        <article class="cert cert--featured">
+          <i class='bx bxl-aws'></i>
+          <div>
+            <h3>AWS Certified Solutions Architect - Associate (SAA)</h3>
+            <p class="muted">Amazon Web Services</p>
+            <p class="mono small">ID: b781b017-84be-422b-9a7f-49e2378474c9</p>
+          </div>
+        </article>
+        <article class="cert cert--featured">
+          <i class='bx bxl-redhat'></i>
+          <div>
+            <h3>Red Hat Certified System Administrator (RHCSA)</h3>
+            <p class="muted">Red Hat</p>
+            <p class="mono small">ID: 240-001-024</p>
+          </div>
+        </article>
+        <article class="cert">
+          <i class='bx bxl-aws'></i>
+          <div>
+            <h3>AWS Cloud Architecting</h3>
+            <p class="muted">Amazon Web Services</p>
+            <p class="mono small">ID: e75db701-1f17-45af-a4f2-240e4c1f43c7</p>
+          </div>
+        </article>
+        <article class="cert">
+          <i class='bx bxl-aws'></i>
+          <div>
+            <h3>AWS Cloud Foundations</h3>
+            <p class="muted">Amazon Web Services</p>
+            <p class="mono small">ID: 44be025b-33f6-40a5-89b6-d8c1f1483c14</p>
+          </div>
+        </article>
+        <article class="cert">
+          <i class='bx bx-award'></i>
+          <div>
+            <h3>SAP - Student Application Program</h3>
+            <p class="muted">Edunet Foundation</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION & ACHIEVEMENTS ================= -->
+    <section class="section container" id="education">
+      <h2 class="section__title"><span class="mono accent">06.</span> Education &amp; Achievements</h2>
+
+      <div class="two-col">
+        <div>
+          <ul class="edu">
+            <li>
+              <h3>B.E. in Computer Engineering</h3>
+              <p>KJ College of Engineering &amp; Management Research, Pune <span class="muted">(Savitribai Phule Pune University)</span></p>
+              <span class="badge mono">2024</span>
+            </li>
+            <li>
+              <h3>HSC (12th)</h3>
+              <p>Purandar Junior College, Saswad</p>
+              <span class="badge mono">2020</span>
+            </li>
+            <li>
+              <h3>SSC (10th)</h3>
+              <p>Gurukul English Medium School, Jejuri</p>
+              <span class="badge mono">2018</span>
+            </li>
+          </ul>
+        </div>
+        <ul class="achievements">
+          <li><i class='bx bx-trophy'></i><div><h3>College Topper</h3><p>Topped Computer Engineering.</p></div></li>
+          <li><i class='bx bx-star'></i><div><h3>Student of the Year</h3><p>Awarded Student of the Year in Engineering.</p></div></li>
+          <li><i class='bx bx-chalkboard'></i><div><h3>Technical Coordinator, KJCOEMR</h3><p>Managed technical events, workshops and seminars connecting students with industry professionals.</p></div></li>
+          <li><i class='bx bx-donate-heart'></i><div><h3>NSS Volunteer</h3><p>Led a 50-member NSS camp for social-service initiatives in rural villages; campus clean-ups and outreach.</p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= EARLIER WORK ================= -->
+    <section class="section container" id="web-projects">
+      <h2 class="section__title"><span class="mono accent">07.</span> Earlier Work: Web Projects</h2>
+      <p class="section__sub">Responsive front-end projects I built before moving into DevOps.</p>
+
+      <div class="web-grid">
+        <a href="projects/nano-folio/index.html" class="web-card" target="_blank" rel="noopener">
+          <img src="assets/img/projects/web1.jpg" alt="Nano Folio project" loading="lazy" width="800" height="450">
+          <div><h3>Nano Folio</h3><p>Responsive · CSS</p></div>
+        </a>
+        <a href="projects/brighton/index.html" class="web-card" target="_blank" rel="noopener">
+          <img src="assets/img/projects/web2.jpg" alt="Brighton project" loading="lazy" width="800" height="450">
+          <div><h3>Brighton</h3><p>Responsive · CSS</p></div>
+        </a>
+        <a href="projects/koppee/index.html" class="web-card" target="_blank" rel="noopener">
+          <img src="assets/img/projects/web3.jpg" alt="Koppee project" loading="lazy" width="800" height="450">
+          <div><h3>Koppee</h3><p>Responsive · Bootstrap</p></div>
+        </a>
+        <a href="projects/spering/index.html" class="web-card" target="_blank" rel="noopener">
+          <img src="assets/img/projects/web4.jpg" alt="Spering project" loading="lazy" width="800" height="450">
+          <div><h3>Spering</h3><p>Responsive · Bootstrap</p></div>
+        </a>
+        <a href="projects/meetup/index.html" class="web-card" target="_blank" rel="noopener">
+          <img src="assets/img/projects/web5.jpg" alt="Meetup project" loading="lazy" width="800" height="450">
+          <div><h3>Meetup</h3><p>Responsive · Bootstrap</p></div>
+        </a>
+        <a href="projects/zuchristmas/index.html" class="web-card" target="_blank" rel="noopener">
+          <img src="assets/img/projects/web6.jpg" alt="ZuChristmas project" loading="lazy" width="800" height="450">
+          <div><h3>ZuChristmas</h3><p>Responsive · Bootstrap</p></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section container" id="contact">
+      <h2 class="section__title"><span class="mono accent">08.</span> Get In Touch</h2>
+
+      <div class="contact">
+        <div class="contact__info">
+          <p>I'm open to DevOps, Cloud and Platform Engineering opportunities. Feel free to reach out!</p>
+          <a href="mailto:chetangawde999@gmail.com" class="contact__item"><i class='bx bx-envelope'></i><div><span>Email</span>chetangawde999@gmail.com</div></a>
+          <a href="tel:+917744804438" class="contact__item"><i class='bx bx-phone'></i><div><span>Phone</span>+91 77448 04438</div></a>
+          <a href="https://www.linkedin.com/in/chetan-gawade-2379a1246" target="_blank" rel="noopener" class="contact__item"><i class='bx bxl-linkedin'></i><div><span>LinkedIn</span>chetan-gawade-2379a1246</div></a>
+          <a href="https://github.com/chetangawade" target="_blank" rel="noopener" class="contact__item"><i class='bx bxl-github'></i><div><span>GitHub</span>github.com/chetangawade</div></a>
+          <div class="contact__item"><i class='bx bx-map'></i><div><span>Location</span>Mumbai, India</div></div>
+        </div>
+
+        <!-- Static site: the form opens the visitor's email app with the message pre-filled -->
+        <form class="contact__form" id="contact-form" novalidate>
+          <label>Name<input type="text" name="name" required placeholder="Your name"></label>
+          <label>Email<input type="email" name="email" required placeholder="you@example.com"></label>
+          <label>Message<textarea name="message" rows="5" required placeholder="Hi Chetan, ..."></textarea></label>
+          <button type="submit" class="btn btn--primary"><i class='bx bx-send'></i> Send Message</button>
+          <p class="form__note muted small" id="form-note">Opens your email app with the message ready to send.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="mono"><span class="accent">~/</span>chetan</p>
+      <div class="footer__social">
+        <a href="https://github.com/chetangawade" target="_blank" rel="noopener" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+        <a href="https://www.linkedin.com/in/chetan-gawade-2379a1246" target="_blank" rel="noopener" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+        <a href="mailto:chetangawde999@gmail.com" aria-label="Email"><i class='bx bx-envelope'></i></a>
+      </div>
+      <p class="muted small">© <span id="year">2026</span> Chetan Gawade. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="to-top icon-btn" id="to-top" aria-label="Back to top"><i class='bx bx-up-arrow-alt'></i></button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
